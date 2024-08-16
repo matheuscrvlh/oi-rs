@@ -1,0 +1,110 @@
+@charset "UTF-8"
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 50%;
+    margin: 0% 0% 0% 25%;
+    background-color: rgb(122, 105, 118);
+}
+
+header {
+    background-color: rgb(210, 180, 211);
+    margin: 0px;
+}
+
+header > h1 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+header > p {
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+ul.meses2023 {
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    display: none;
+    width: 120px;
+    height: 50px;
+    background-color: rgb(142, 106, 143);
+}
+
+div > p {
+    background-color: rgb(142, 106, 143);
+    padding: 10px;
+    margin: 0px;
+}
+
+div.menu2023:hover .meses2023 {
+    display: inline-block;
+    padding: 5px;
+}
+
+ul.meses2024 {
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    display: none;
+    width: 120px;
+    height: 160px;
+    background-color: rgb(142, 106, 143);
+}
+
+div.menu2024:hover .meses2024 {
+    display: inline-block;
+    padding: 5px;
+}
+
+div > ul > li > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+}
+
+div > ul > li {
+    list-style-type: none;
+}
+
+div > ul > li:hover {
+    text-decoration: underline white;
+}
+
+main {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+main  > h1 {
+    text-align: center;
+    margin: 30px;
+    border: 10px;
+    padding: 15px;
+}
+
+main > p {
+    text-indent: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+
+footer > p {
+    margin: 0px;
+}
