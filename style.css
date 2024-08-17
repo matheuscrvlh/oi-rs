@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
 :root {
-    --cor1: rgb(122, 105, 118);
+    --corbg: rgb(192, 134, 178);
+    --corwhite: white;
+    --corblack: black;
+    --cor1: rgb(223, 195, 224);
+    --cor2: rgb(144, 83, 146);
+    --shadow: rgba(0, 0, 0, 0.13);
 }
 
 * {
@@ -13,12 +18,13 @@
 body {
     width: 50%;
     margin: 0% 0% 0% 25%;
-    background-color: var(--cor1);
+    background-color: var(--corbg);
 }
 
 header {
-    background-color: rgb(210, 180, 211);
+    background-color: var(--cor1);
     margin: 0px;
+    box-shadow: 0px 10px 20px 10px var(--shadow);
 }
 
 header > h1 {
@@ -33,48 +39,55 @@ header > p {
 
 nav {
     display: flex;
+    background-color: var(--cor2);
+}
+
+.menu2023 {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 ul.meses2023 {
-    text-align: center;
-    padding: 5px;
-    margin: 0px;
+    text-align: left;
     display: none;
-    width: 120px;
+    width: 95%;
     height: 50px;
-    background-color: rgb(142, 106, 143);
+    background-color: var(--cor2);
 }
 
 div > p {
-    background-color: rgb(142, 106, 143);
+    color: var(--corwhite);
+    font-size: 1.1em;
+    background-color: var(--cor2);
     padding: 10px;
     margin: 0px;
 }
 
+.menu2024 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 div.menu2023:hover .meses2023 {
     display: inline-block;
-    padding: 5px;
 }
 
 ul.meses2024 {
-    text-align: center;
-    padding: 5px;
-    margin: 0px;
+    text-align: left;
     display: none;
-    width: 120px;
-    height: 160px;
-    background-color: rgb(142, 106, 143);
+    width: 95%;
+    height: 170px;
+    background-color: var(--cor2);
 }
 
 div.menu2024:hover .meses2024 {
     display: inline-block;
-    padding: 5px;
 }
 
 div > ul > li > a {
-    color: white;
+    color: var(--corwhite);
     text-decoration: none;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px var(--corblack);
 }
 
 div > ul > li {
@@ -82,12 +95,13 @@ div > ul > li {
 }
 
 div > ul > li:hover {
-    text-decoration: underline white;
+    text-decoration: underline var(--corwhite);
 }
 
 main {
-    background-color: lightgray;
+    background-color: var(--cor1);
     padding: 20px;
+    box-shadow: 0px 10px 20px 0px var(--shadow);
 }
 
 main  > h1 {
@@ -103,8 +117,8 @@ main > p {
 
 footer {
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: var(--corblack);
+    color: var(--corwhite);
     padding: 10px;
     margin: 0px;
 }
