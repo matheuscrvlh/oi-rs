@@ -1,4 +1,8 @@
-@charset "UTF-8"
+@charset "UTF-8";
+
+:root {
+    --cor1: rgb(122, 105, 118);
+}
 
 * {
     margin: 0px;
@@ -9,7 +13,7 @@
 body {
     width: 50%;
     margin: 0% 0% 0% 25%;
-    background-color: rgb(122, 105, 118);
+    background-color: var(--cor1);
 }
 
 header {
