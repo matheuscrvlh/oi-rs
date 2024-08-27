@@ -108,7 +108,7 @@ main {
 
 main  > h1 {
     text-align: center;
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
 }
 
@@ -117,9 +117,15 @@ main > p {
 }
 
 main > img {
-    margin: 30px 0px 0px 25%;
-    width: 44%;
+    margin: 20px 0px 0px 25%;
+    width: 50%;
     height: 40%;
+}
+
+main > .meio {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 50px 0px -15px 0px;
 }
 
 footer {
